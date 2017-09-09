@@ -2,6 +2,7 @@ package lab1;
 
 import java.util.Scanner;
 
+// Here you had to calculate years and days
 public class Howmanyyears27 {
 
 	public static void main(String[] args) {
@@ -10,25 +11,25 @@ public class Howmanyyears27 {
 		
 		// Get user input in minutes
 		System.out.print("Enter time in minutes ");
-		double Minutes = input.nextDouble();
+		int Minutes = input.nextInt();
 		
 		// convert minutes into hours
-		double Hours = (Minutes) / (60.0);
+		double Hours = (int)(Minutes) / (60); // JA: Use lowercase for variable names
 		
 		// hours into days
-		double Days = (Hours) / (24);
+		double Days = (int)(Hours) / (24);
 		
 		// days into years
-		double Years = (Days) / (365);
+		int Years = Minutes / (365 * 24 * 60);
 		
 		// find remainder in days
-		double Remainder = (Days) % (365);
+		int Remainder = (Minutes / (24 * 60)) % 365;
 		
 		// remove reminder from year
-		double Finalyears = (Years - Remainder);
+		//double Finalyears = (Years - Remainder);
 		
 		// display results
-		System.out.print(Finalyears + " And " + Remainder + " Days ");
+		System.out.print(Years + " And " + Remainder + " Days ");
 
 	}
 

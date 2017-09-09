@@ -2,6 +2,7 @@ package lab1;
 
 import java.util.Scanner;
 
+// JA: This problem was the reverse, from Celsius to Fahrenheit
 public class Degree21 {
 
 	public static void main(String[] args) {

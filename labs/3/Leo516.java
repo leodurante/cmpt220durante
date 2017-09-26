@@ -18,7 +18,7 @@ public class Leo516 {
 		int test = 2;
 		
 		//create loop
-		while (number / test != 1) {
+		while (number / test >= 1) { // JA: Changed != to >=
 			
 			// Test potential factors
 			if (number % test  == 0) {

@@ -12,8 +12,9 @@ public class lab9_3 {
 		//100000000000
 		//create a value to keep track of time elapsed
 		//i removed 4 zeroes from the values so it could fit in integer
-		for (int elapsed = 1; elapsed >= 10000000; elapsed *= 10){
+		for (long elapsed = 1000L; elapsed <= 100000000000L; elapsed *= 10){ // JA
 			//print elapsed time with toString within loop
+			date.setTime(elapsed); //JA
 			System.out.println(date.toString());
 		}
 		

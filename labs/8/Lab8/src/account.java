@@ -19,7 +19,10 @@ public class account {
 		this.balance = balance;
 		this.annualInterestRate = annualInterestRate;
 	}
-	
+	account(int id, double balance){ // JA
+		this.id = id;
+		this.balance = balance;
+	}	
 	
 	//mutator methods
 	public void setId(int newId) {

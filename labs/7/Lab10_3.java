@@ -30,7 +30,7 @@ public class Lab10_3 {
 			
 			//isPrime
 			public int isPrime() {
-				return isPrime
+				return isPrime; //JA
 						
 			}
 			

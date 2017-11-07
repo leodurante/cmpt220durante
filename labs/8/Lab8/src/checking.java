@@ -5,15 +5,16 @@ public class checking extends account {
 	
 	//default constructor 
 	public checking(){
-		overdraftlimit = 0;
-		id = 0;
-		balance = 0;
+	//	overdraftlimit = 0; // JA
+	//	id = 0;
+	//	balance = 0;
 	}
 	
 	//construct an account
 	public checking(int id, double balance, double overdraftlimit) {
-		this.id = id;
-		this.balance = balance;
+	//	this.id = id; //JA
+	//	this.balance = balance;
+		super(id, balance);
 		this.overdraftlimit = overdraftlimit;
 	}
 	
@@ -35,7 +36,7 @@ public class checking extends account {
 		else System.out.println("amount exceeds overdraft limit");
 	}
 	public String toString() {
-		return ;
+		return ""; // JA
 	}
 
 }

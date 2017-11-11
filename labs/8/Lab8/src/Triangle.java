@@ -37,8 +37,8 @@ public class Triangle extends GeometricObject {
 	
 	//calculate & return area
 	public double getArea() {
-		return Math.sqrt(getPerimeter() * (getPerimeter() - side1) * 
-				(getPerimeter() - side2) * (getPerimeter() - side3));
+		return Math.sqrt(getPerimeter()/2 * (getPerimeter()/2 - side1) * 
+				(getPerimeter()/2 - side2) * (getPerimeter()/2 - side3)); // JA
 	}
 	
 	//method named toString() that returns a 

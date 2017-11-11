@@ -1,15 +1,17 @@
 
 public class savings extends account {
+
 	//create default account
 	public savings(){
-		balance = 0;
-		id = 0;
+		//balance = 0;
+		//id = 0;
 	}
 	
 	//create account with specific variables
 	public savings(int id, double balance){
-		this.id = id;
-		this.balance = balance;
+	//	this.id = id;
+	//	this.balance = balance;
+	   super(id, balance);
 	}
 	
 	//create withdraw mechanism and overdraft rejection
@@ -21,7 +23,7 @@ public class savings extends account {
 	}
 	
 	public String toString() {
-		return ;
+		return "";
 	}
 
 }

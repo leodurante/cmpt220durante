@@ -18,7 +18,7 @@ public class Triangle { //remove geometric object extension extends GeometricObj
 		this.side2 = side2;
 		this.side3 = side3;
 		//implimentation of IllegalTriangleException
-		throw IllegalTriangleException
+		throw IllegalTriangleException // JA: You should only do this if the conditions are not met
 	}
 	
 	//accessor methods
